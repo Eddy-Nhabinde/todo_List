@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import styles from './tabs.module.css'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles({
     root: {
@@ -30,9 +31,12 @@ export default function CenteredTabs() {
                     textColor="primary"
                     centered
                 >
-                    <Tab label="All" />
-                    <Tab label="Active" />
-                    <Tab label="Completed" />
+                    <Tab label="All" component={Link}
+                        to={'/'} />
+                    <Tab label="Active" component={Link}
+                        to={'/Active'} />
+                    <Tab label="Completed" component={Link}
+                        to={'/Completed'} />
                 </Tabs>
             </Paper>
         </div>
