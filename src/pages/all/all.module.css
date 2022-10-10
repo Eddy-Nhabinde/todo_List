@@ -1,0 +1,13 @@
+.details{
+    padding-left: 25%;
+    padding-top: 50px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 75% 15%;
+    justify-content: space-between;
+}
+
+.title h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
