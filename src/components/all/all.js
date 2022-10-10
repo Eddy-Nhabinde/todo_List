@@ -1,5 +1,5 @@
-import Btn from "../../components/input/button/button";
-import BasicTextFields from "../../components/input/textField/textField";
+import Btn from "../input/button/button";
+import BasicTextFields from "../input/textField/textField";
 import styles from './all.module.css'
 
 export function All() {

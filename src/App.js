@@ -1,13 +1,13 @@
 import CenteredTabs from "./components/tabsComponent/tabs";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { All } from "./pages/all/all";
+import { TodosTodos } from "./pages/Todos/todos";
 
 function App() {
   return (
     <Router>
       <CenteredTabs />
       <Routes>
-        <Route path='/' element={<All />} ></Route>
+        <Route path='/' element={<TodosTodos />} ></Route>
       </Routes>
     </Router>
   );
